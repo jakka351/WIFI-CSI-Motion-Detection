@@ -95,9 +95,9 @@ This project demonstrates how Wi-Fi signals—specifically, CSI extracted from o
    ```
 
 # Interpretation of Data Display
+I am yet to figure out how to interpret the data on the Console GUI display. Let me know if you have any ideas.
 
-
-# Credis
+# Credits
 **This is a variation on code found in this guide**:  
 **Credit:** Mikhail Zakharov, published December 20, 2021  
 **License:** GPL-3.0+ ([https://www.hackster.io/mzakharo/wifi-sensing-via-raspberry-pi-ff1087](https://www.hackster.io/mzakharo/wifi-sensing-via-raspberry-pi-ff1087))
