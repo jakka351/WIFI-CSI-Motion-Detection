@@ -11,11 +11,9 @@ Detecting Motion via WIFI Channel State Information using a RPI4 with patched fi
 1. [Introduction](#introduction)  
 2. [Hardware Requirements](#hardware-requirements)  
 3. [Setup](#setup)  
-4. [Testing the Setup](#testing-the-setup)  
-5. [Prepare the Python Environment](#prepare-the-python-environment)  
-6. [Configure InfluxDB](#configure-influxdb)  
-7. [Run the Wi-Fi Sensing Script](#run-the-wi-fi-sensing-script)  
-8. [Credits](#credits)
+4. [Run the Wi-Fi Sensing Script](#run-the-wi-fi-sensing-script)
+5. Interpretation of Data Display(#interpretation-of-data-display)  
+6. [Credits](#credits)
 
 ---
 
@@ -95,10 +93,11 @@ This project demonstrates how Wi-Fi signals—specifically, CSI extracted from o
    sudo chmod +x ./start.sh
    ./start.sh
    ```
-   
+
+# Interpretation of Data Display
 
 
-
+# Credis
 **This is a variation on code found in this guide**:  
 **Credit:** Mikhail Zakharov, published December 20, 2021  
 **License:** GPL-3.0+ ([https://www.hackster.io/mzakharo/wifi-sensing-via-raspberry-pi-ff1087](https://www.hackster.io/mzakharo/wifi-sensing-via-raspberry-pi-ff1087))
