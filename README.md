@@ -21,29 +21,29 @@ Detecting Motion via WIFI Channel State Information using a RPI4 with patched fi
 
 ## Introduction
 
-This project demonstrates how Wi-Fi signals—specifically, CSI extracted from on-board Raspberry Pi Wi-Fi—can be used for detecting motion, even through walls, by analyzing reflections/absorption caused by the human body ([hackster.io](https://www.hackster.io/mzakharo/wifi-sensing-via-raspberry-pi-ff1087)).
-
+This project demonstrates how Wi-Fi signals—specifically, CSI extracted from on-board Raspberry Pi Wi-Fi—can be used for detecting motion, even through walls, by analyzing reflections/absorption caused by the human body.
 **Notes:**
 - CSI comes from OFDM-based 802.11 beacons; this works best in the 5 GHz band.
 - On many routers, 2.4 GHz uses DSSS (not OFDM), which is less suitable.
 - Use channels like **36/80** or **157/80**, which are commonly supported by default patches.
-- This setup **disables on-board Wi-Fi communication**; make sure to use an Ethernet connection to access the Pi ([hackster.io](https://www.hackster.io/mzakharo/wifi-sensing-via-raspberry-pi-ff1087)).
+- This setup **disables on-board Wi-Fi communication**; make sure to use an Ethernet connection to access the Pi, alternatively use a second USB wifi dongle on WLAN1 to access the Pi.
 
 ---
 
 ## Hardware Requirements
 
 - **Raspberry Pi 4 Model B** (or similar Pi with onboard Wi-Fi).
+- **USB Wifi Adaptor**
 
 ---
 
 ## Setup
 
-1. Flash the **official 32-bit Raspbian image** onto your SD card.  
+1. Flash **32 Bit Raspberry Pi - Legacy OS* onto your SD card. This is important as we need to patch the firmware of the Raspbery Pi.  
 2. Update and upgrade packages:
 
    ```bash
-   sudo apt-get update && sudo apt-get dist-upgrade
+   sudo apt update -y && sudo apt upgrade -y
    sudo reboot
 
 
