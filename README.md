@@ -81,7 +81,21 @@ This project demonstrates how Wi-Fi signals—specifically, CSI extracted from o
    # set mon0 up
    sudo ip link set mon0 up
    ```
-
+6. Create the python scripts, wifi_sensing.py & matrix.py
+   ```bash
+   located in the github repository
+   ```
+7. Create the script start.sh
+   ```bash
+   #/bin/bash
+   python3 -u wifi_sensing.py | python3 matrix.py
+   ```
+8. Run the script
+   ```bash
+   sudo chmod +x ./start.sh
+   ./start.sh
+   ```
+   
 
 
 
