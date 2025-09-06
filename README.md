@@ -39,12 +39,50 @@ This project demonstrates how Wi-Fi signals—specifically, CSI extracted from o
 
 ## Setup
 
-1. Flash **32 Bit Raspberry Pi - Legacy OS* onto your SD card. This is important as we need to patch the firmware of the Raspbery Pi.  
+1. Flash **32 Bit Raspberry Pi - Legacy OS** onto your SD card. This is important as we need to patch the firmware of the Raspbery Pi.  
 2. Update and upgrade packages:
 
    ```bash
    sudo apt update -y && sudo apt upgrade -y
    sudo reboot
+   
+3. Install picsi on a Raspberry Pi, which is a Python tool for installing and managing Nexmon CSI on Raspberry Pi:
+   Ensure Python 3 and pip are installed: picsi requires Python 3.7 or newer. Raspberry Pi OS usually comes with Python 3 pre-installed. You'll also need pip for Python
+   ```bash
+   sudo apt install python3-pip
+   pip3 install picsi
+   ```
+   Update your PATH (optional but recommended): To ensure the picsi command is readily available in your terminal, update your shell's PATH variable:
+   ```bash
+   source ~/.profile
+   ```
+   Install Nexmon CSI firmware/binaries: picsi handles the installation of Nexmon CSI, which involves downloading or compiling the necessary firmware and binaries for your specific Raspberry Pi model. Execute the following command:
+   ```
+   picsi install
+   ```
+   Enable picsi
+   ```bash
+   picsi enable
+   ```
+   This enables Nexmon CSI and starts CSI collection. You can view the status using picsi status or stop it with picsi down. 
+   
+5. Set Raspberry Pi Firmware for Channel State Information:
+   ```bash init.sh
+   #/bin/bash
+   # run at start up
+   #Run this script to setup your CSI parameters and bring up Mon0 - the monitoring interface on wlan0
+   makecsiparams -c 157/80 -C 1 -N 1 -b 0x80
+   # bring wlan0 up
+   sudo ifconfig wlan0 up
+   #
+   nexutil -Iwlan0 -s500 -b -l34 -v m+IBEQGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==
+   # create interface mon0
+   sudo iw dev wlan0 interface add mon0 type monitor
+   # set mon0 up
+   sudo ip link set mon0 up
+   ```
+
+
 
 
 **This is a variation on code found in this guide**:  
