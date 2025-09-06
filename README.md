@@ -19,7 +19,7 @@ Detecting Motion via WIFI Channel State Information using a RPI4 with patched fi
 
 ## Introduction
 
-This project demonstrates how Wi-Fi signals—specifically, CSI extracted from on-board Raspberry Pi Wi-Fi—can be used for detecting motion, even through walls, by analyzing reflections/absorption caused by the human body.
+This project demonstrates how Wi-Fi signals—specifically, CSI extracted from on-board Raspberry Pi Wi-Fi—can be used for detecting motion, even through walls, by analyzing reflections/absorption caused by the human body or moving objects.  
 **Notes:**
 - CSI comes from OFDM-based 802.11 beacons; this works best in the 5 GHz band.
 - On many routers, 2.4 GHz uses DSSS (not OFDM), which is less suitable.
