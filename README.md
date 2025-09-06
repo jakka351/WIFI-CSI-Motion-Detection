@@ -3,8 +3,8 @@ Detecting Motion via WIFI Channel State Information using a RPI4 with patched fi
 **Use case:** Detect motion through walls using Wi-Fi signals and a Raspberry Pi by capturing Channel State Information (CSI) from 802.11 beacons.
 
 
-This is a variation on code found in this guide:
-**Credits:** Mikhail Zakharov, published December 20, 2021  
+**This is a variation on code found in this guide**:  
+**Credit:** Mikhail Zakharov, published December 20, 2021  
 **License:** GPL-3.0+ ([hackster.io](https://www.hackster.io/mzakharo/wifi-sensing-via-raspberry-pi-ff1087))
 
 ---
