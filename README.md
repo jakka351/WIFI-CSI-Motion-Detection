@@ -12,7 +12,7 @@ Detecting Motion via WIFI Channel State Information using a RPI4 with patched fi
 2. [Hardware Requirements](#hardware-requirements)  
 3. [Setup](#setup)  
 4. [Run the Wi-Fi Sensing Script](#run-the-wi-fi-sensing-script)
-5. Interpretation of Data Display(#interpretation-of-data-display)  
+5. [Interpretation of Data Display](#interpretation-of-data-display)  
 6. [Credits](#credits)
 
 ---
