@@ -5,7 +5,7 @@ Detecting Motion via WIFI Channel State Information using a RPI4 with patched fi
 
 **This is a variation on code found in this guide**:  
 **Credit:** Mikhail Zakharov, published December 20, 2021  
-**License:** GPL-3.0+ ([hackster.io](https://www.hackster.io/mzakharo/wifi-sensing-via-raspberry-pi-ff1087))
+**License:** GPL-3.0+ ([https://www.hackster.io/mzakharo/wifi-sensing-via-raspberry-pi-ff1087](https://www.hackster.io/mzakharo/wifi-sensing-via-raspberry-pi-ff1087))
 
 ---
 
